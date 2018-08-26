@@ -865,7 +865,7 @@ namespace AE
         private void 获取质心ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Console.WriteLine("sss");
-            Console.WriteLine("sss");
+            Console.WriteLine("ssdadsadadas");
         }
 
         private void 质心迁移ToolStripMenuItem_Click(object sender, EventArgs e)
