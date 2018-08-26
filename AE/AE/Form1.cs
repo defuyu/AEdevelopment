@@ -871,6 +871,9 @@ namespace AE
         private void 质心迁移ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Console.WriteLine("ssdadsadadas");
+            Console.WriteLine("ssdadsadadas");
+            Console.WriteLine("假设我编完了，需要上传上去");
+            Console.WriteLine("假设我编完了，需要上传上去");
         }
     }
 
