@@ -875,6 +875,12 @@ namespace AE
             Console.WriteLine("假设我编完了，需要上传上去");
             Console.WriteLine("假设我编完了，需要上传上去");
         }
+
+        private void 制作统计图表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatisticalGraph sGraph = new StatisticalGraph();
+            sGraph.Visible = true;
+        }
     }
 
 }

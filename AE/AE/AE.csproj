@@ -144,6 +144,12 @@
     <Compile Include="ratioModel.designer.cs">
       <DependentUpon>ratioModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatisticalGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticalGraph.Designer.cs">
+      <DependentUpon>StatisticalGraph.cs</DependentUpon>
+    </Compile>
     <Compile Include="threeModel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </Compile>
     <EmbeddedResource Include="ratioModel.resx">
       <DependentUpon>ratioModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticalGraph.resx">
+      <DependentUpon>StatisticalGraph.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="threeModel.resx">
       <DependentUpon>threeModel.cs</DependentUpon>
