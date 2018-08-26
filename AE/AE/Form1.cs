@@ -870,7 +870,7 @@ namespace AE
 
         private void 质心迁移ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("ssdadsadadas");
         }
     }
 

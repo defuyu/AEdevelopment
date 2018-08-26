@@ -107,3 +107,5 @@ D:\programming\AEcode\AEdevelopment\AE\AE\obj\x86\Debug\AE.exe
 D:\programming\AEcode\AEdevelopment\AE\AE\obj\x86\Debug\AE.pdb
 D:\code\AEdevelopment\AE\AE\obj\x86\Debug\AE.exe
 D:\code\AEdevelopment\AE\AE\obj\x86\Debug\AE.pdb
+D:\c#大作业\AEdevelopment\AE\AE\obj\x86\Debug\AE.exe
+D:\c#大作业\AEdevelopment\AE\AE\obj\x86\Debug\AE.pdb
