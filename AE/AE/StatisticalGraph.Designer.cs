@@ -30,22 +30,22 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tableCmb = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.filepathtBx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tableCmb = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btGenerate = new System.Windows.Forms.Button();
-            this.btCancel = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.checkedList = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btGenerate = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -74,6 +74,24 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选择源数据文件";
+            // 
+            // tableCmb
+            // 
+            this.tableCmb.FormattingEnabled = true;
+            this.tableCmb.Location = new System.Drawing.Point(149, 83);
+            this.tableCmb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableCmb.Name = "tableCmb";
+            this.tableCmb.Size = new System.Drawing.Size(350, 26);
+            this.tableCmb.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(54, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "导入数据表：";
             // 
             // filepathtBx
             // 
@@ -105,46 +123,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "参数设置";
             // 
-            // tableCmb
+            // groupBox4
             // 
-            this.tableCmb.FormattingEnabled = true;
-            this.tableCmb.Location = new System.Drawing.Point(149, 83);
-            this.tableCmb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tableCmb.Name = "tableCmb";
-            this.tableCmb.Size = new System.Drawing.Size(350, 26);
-            this.tableCmb.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "导入数据表：";
-            // 
-            // btGenerate
-            // 
-            this.btGenerate.Location = new System.Drawing.Point(163, 561);
-            this.btGenerate.Name = "btGenerate";
-            this.btGenerate.Size = new System.Drawing.Size(129, 33);
-            this.btGenerate.TabIndex = 3;
-            this.btGenerate.Text = "图表生成";
-            this.btGenerate.UseVisualStyleBackColor = true;
-            // 
-            // btCancel
-            // 
-            this.btCancel.Location = new System.Drawing.Point(432, 562);
-            this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(129, 33);
-            this.btCancel.TabIndex = 3;
-            this.btCancel.Text = "取消";
-            this.btCancel.UseVisualStyleBackColor = true;
-            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
+            this.groupBox4.Controls.Add(this.checkedList);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox4.Location = new System.Drawing.Point(17, 38);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(416, 306);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "体育产业类别";
             // 
             // checkedList
             // 
             this.checkedList.FormattingEnabled = true;
+            this.checkedList.Items.AddRange(new object[] {
+            "体育管理活动",
+            "体育竞赛表演活动",
+            "体育健身休闲活动",
+            "体育场馆服务",
+            "体育中介服务",
+            "体育培训与教育",
+            "体育传媒与信息服务",
+            "其他与体育相关服务",
+            "体育用品及相关产品制造",
+            "体育用品及相关产品销售、贸易代理与出租",
+            "体育场地设施建设"});
             this.checkedList.Location = new System.Drawing.Point(13, 25);
             this.checkedList.Name = "checkedList";
             this.checkedList.Size = new System.Drawing.Size(371, 257);
@@ -162,20 +166,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "属性";
             // 
-            // groupBox4
+            // radioButton2
             // 
-            this.groupBox4.Controls.Add(this.checkedList);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox4.Location = new System.Drawing.Point(17, 38);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(416, 306);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "体育产业类别";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radioButton2.Location = new System.Drawing.Point(39, 77);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(105, 22);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "营业收入";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton1.Location = new System.Drawing.Point(39, 30);
             this.radioButton1.Name = "radioButton1";
@@ -185,17 +190,25 @@
             this.radioButton1.Text = "从业人员";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // btGenerate
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radioButton2.Location = new System.Drawing.Point(39, 77);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 22);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "营业额";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.btGenerate.Location = new System.Drawing.Point(163, 561);
+            this.btGenerate.Name = "btGenerate";
+            this.btGenerate.Size = new System.Drawing.Size(129, 33);
+            this.btGenerate.TabIndex = 3;
+            this.btGenerate.Text = "图表生成";
+            this.btGenerate.UseVisualStyleBackColor = true;
+            this.btGenerate.Click += new System.EventHandler(this.btGenerate_Click);
+            // 
+            // btCancel
+            // 
+            this.btCancel.Location = new System.Drawing.Point(432, 562);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(129, 33);
+            this.btCancel.TabIndex = 3;
+            this.btCancel.Text = "取消";
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // StatisticalGraph
             // 
@@ -211,9 +224,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
