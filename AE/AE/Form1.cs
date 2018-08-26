@@ -866,6 +866,8 @@ namespace AE
         {
             Console.WriteLine("sss");
             Console.WriteLine("ssdadsadadas");
+            Console.WriteLine("ssdadsadadas");
+            Console.WriteLine("ssdadsadadas");
         }
 
         private void 质心迁移ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -880,6 +882,11 @@ namespace AE
         {
             StatisticalGraph sGraph = new StatisticalGraph();
             sGraph.Visible = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
