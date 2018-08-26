@@ -49,6 +49,8 @@ namespace AE
             this.按属性查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.按位置查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.分级设色ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.获取质心ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.质心迁移ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.反演模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.三波段模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.比值模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,8 +66,6 @@ namespace AE
             this.添加shpe图层ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看属性表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.axLicenseControl2 = new ESRI.ArcGIS.Controls.AxLicenseControl();
-            this.获取质心ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.质心迁移ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
@@ -86,11 +86,11 @@ namespace AE
             // axMapControl1
             // 
             this.axMapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axMapControl1.Location = new System.Drawing.Point(4, 4);
-            this.axMapControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axMapControl1.Location = new System.Drawing.Point(4, 5);
+            this.axMapControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
-            this.axMapControl1.Size = new System.Drawing.Size(1105, 512);
+            this.axMapControl1.Size = new System.Drawing.Size(1244, 617);
             this.axMapControl1.TabIndex = 0;
             this.axMapControl1.OnMouseMove += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseMoveEventHandler(this.axMapControl1_OnMouseMove);
             this.axMapControl1.OnViewRefreshed += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnViewRefreshedEventHandler(this.axMapControl1_OnViewRefreshed);
@@ -100,17 +100,17 @@ namespace AE
             // axToolbarControl1
             // 
             this.axToolbarControl1.Location = new System.Drawing.Point(11, 26);
-            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axToolbarControl1.Name = "axToolbarControl1";
             this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
-            this.axToolbarControl1.Size = new System.Drawing.Size(764, 28);
+            this.axToolbarControl1.Size = new System.Drawing.Size(917, 28);
             this.axToolbarControl1.TabIndex = 2;
             // 
             // axLicenseControl1
             // 
             this.axLicenseControl1.Enabled = true;
             this.axLicenseControl1.Location = new System.Drawing.Point(597, -14);
-            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axLicenseControl1.Name = "axLicenseControl1";
             this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
@@ -118,61 +118,61 @@ namespace AE
             // 
             // axPageLayoutControl1
             // 
-            this.axPageLayoutControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.axPageLayoutControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.axPageLayoutControl1.Location = new System.Drawing.Point(6, 6);
-            this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axPageLayoutControl1.Name = "axPageLayoutControl1";
             this.axPageLayoutControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axPageLayoutControl1.OcxState")));
-            this.axPageLayoutControl1.Size = new System.Drawing.Size(1280, 626);
+            this.axPageLayoutControl1.Size = new System.Drawing.Size(1536, 751);
             this.axPageLayoutControl1.TabIndex = 4;
             this.axPageLayoutControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IPageLayoutControlEvents_Ax_OnMouseDownEventHandler(this.axPageLayoutControl1_OnMouseDown);
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(4, 4);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Location = new System.Drawing.Point(4, 5);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1121, 549);
+            this.tabControl1.Size = new System.Drawing.Size(1260, 659);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.axMapControl1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1113, 520);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage1.Size = new System.Drawing.Size(1252, 627);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(784, 482);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(882, 578);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(315, 25);
+            this.textBox1.Size = new System.Drawing.Size(354, 28);
             this.textBox1.TabIndex = 1;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.axPageLayoutControl1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1112, 520);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage2.Size = new System.Drawing.Size(1252, 627);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "布局";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -188,8 +188,8 @@ namespace AE
             this.toolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1363, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1533, 32);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -201,35 +201,35 @@ namespace AE
             this.加载文件ToolStripMenuItem,
             this.图形输出ToolStripMenuItem});
             this.加载图像ToolStripMenuItem1.Name = "加载图像ToolStripMenuItem1";
-            this.加载图像ToolStripMenuItem1.Size = new System.Drawing.Size(51, 24);
+            this.加载图像ToolStripMenuItem1.Size = new System.Drawing.Size(58, 28);
             this.加载图像ToolStripMenuItem1.Text = "图像";
             this.加载图像ToolStripMenuItem1.Click += new System.EventHandler(this.加载图像ToolStripMenuItem1_Click);
             // 
             // 加载图像ToolStripMenuItem
             // 
             this.加载图像ToolStripMenuItem.Name = "加载图像ToolStripMenuItem";
-            this.加载图像ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.加载图像ToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.加载图像ToolStripMenuItem.Text = "加载图像";
             this.加载图像ToolStripMenuItem.Click += new System.EventHandler(this.加载图像ToolStripMenuItem_Click);
             // 
             // 移除图像ToolStripMenuItem
             // 
             this.移除图像ToolStripMenuItem.Name = "移除图像ToolStripMenuItem";
-            this.移除图像ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.移除图像ToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.移除图像ToolStripMenuItem.Text = "移除图像";
             this.移除图像ToolStripMenuItem.Click += new System.EventHandler(this.移除图像ToolStripMenuItem_Click);
             // 
             // 加载文件ToolStripMenuItem
             // 
             this.加载文件ToolStripMenuItem.Name = "加载文件ToolStripMenuItem";
-            this.加载文件ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.加载文件ToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.加载文件ToolStripMenuItem.Text = "加载高光谱文件";
             this.加载文件ToolStripMenuItem.Click += new System.EventHandler(this.加载高光谱文件ToolStripMenuItem_Click);
             // 
             // 图形输出ToolStripMenuItem
             // 
             this.图形输出ToolStripMenuItem.Name = "图形输出ToolStripMenuItem";
-            this.图形输出ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.图形输出ToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.图形输出ToolStripMenuItem.Text = "图形输出";
             this.图形输出ToolStripMenuItem.Click += new System.EventHandler(this.图形输出ToolStripMenuItem_Click);
             // 
@@ -239,19 +239,19 @@ namespace AE
             this.按属性查询ToolStripMenuItem,
             this.按位置查询ToolStripMenuItem});
             this.查询ToolStripMenuItem.Name = "查询ToolStripMenuItem";
-            this.查询ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.查询ToolStripMenuItem.Size = new System.Drawing.Size(58, 28);
             this.查询ToolStripMenuItem.Text = "查询";
             // 
             // 按属性查询ToolStripMenuItem
             // 
             this.按属性查询ToolStripMenuItem.Name = "按属性查询ToolStripMenuItem";
-            this.按属性查询ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.按属性查询ToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
             this.按属性查询ToolStripMenuItem.Text = "按属性查询";
             // 
             // 按位置查询ToolStripMenuItem
             // 
             this.按位置查询ToolStripMenuItem.Name = "按位置查询ToolStripMenuItem";
-            this.按位置查询ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.按位置查询ToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
             this.按位置查询ToolStripMenuItem.Text = "按位置查询";
             // 
             // 分级设色ToolStripMenuItem
@@ -260,8 +260,21 @@ namespace AE
             this.获取质心ToolStripMenuItem,
             this.质心迁移ToolStripMenuItem});
             this.分级设色ToolStripMenuItem.Name = "分级设色ToolStripMenuItem";
-            this.分级设色ToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.分级设色ToolStripMenuItem.Size = new System.Drawing.Size(112, 28);
             this.分级设色ToolStripMenuItem.Text = "质心迁移图";
+            // 
+            // 获取质心ToolStripMenuItem
+            // 
+            this.获取质心ToolStripMenuItem.Name = "获取质心ToolStripMenuItem";
+            this.获取质心ToolStripMenuItem.Size = new System.Drawing.Size(152, 28);
+            this.获取质心ToolStripMenuItem.Text = "获取质心";
+            this.获取质心ToolStripMenuItem.Click += new System.EventHandler(this.获取质心ToolStripMenuItem_Click);
+            // 
+            // 质心迁移ToolStripMenuItem
+            // 
+            this.质心迁移ToolStripMenuItem.Name = "质心迁移ToolStripMenuItem";
+            this.质心迁移ToolStripMenuItem.Size = new System.Drawing.Size(152, 28);
+            this.质心迁移ToolStripMenuItem.Text = "质心迁移";
             // 
             // 反演模型ToolStripMenuItem
             // 
@@ -270,27 +283,27 @@ namespace AE
             this.比值模型ToolStripMenuItem,
             this.三波段栅格反演模型ToolStripMenuItem});
             this.反演模型ToolStripMenuItem.Name = "反演模型ToolStripMenuItem";
-            this.反演模型ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.反演模型ToolStripMenuItem.Size = new System.Drawing.Size(94, 28);
             this.反演模型ToolStripMenuItem.Text = "反演模型";
             // 
             // 三波段模型ToolStripMenuItem
             // 
             this.三波段模型ToolStripMenuItem.Name = "三波段模型ToolStripMenuItem";
-            this.三波段模型ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.三波段模型ToolStripMenuItem.Size = new System.Drawing.Size(242, 28);
             this.三波段模型ToolStripMenuItem.Text = "三波段模型";
             this.三波段模型ToolStripMenuItem.Click += new System.EventHandler(this.三波段模型ToolStripMenuItem_Click);
             // 
             // 比值模型ToolStripMenuItem
             // 
             this.比值模型ToolStripMenuItem.Name = "比值模型ToolStripMenuItem";
-            this.比值模型ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.比值模型ToolStripMenuItem.Size = new System.Drawing.Size(242, 28);
             this.比值模型ToolStripMenuItem.Text = "比值模型";
             this.比值模型ToolStripMenuItem.Click += new System.EventHandler(this.比值模型ToolStripMenuItem_Click);
             // 
             // 三波段栅格反演模型ToolStripMenuItem
             // 
             this.三波段栅格反演模型ToolStripMenuItem.Name = "三波段栅格反演模型ToolStripMenuItem";
-            this.三波段栅格反演模型ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.三波段栅格反演模型ToolStripMenuItem.Size = new System.Drawing.Size(242, 28);
             this.三波段栅格反演模型ToolStripMenuItem.Text = "三波段栅格反演模型";
             this.三波段栅格反演模型ToolStripMenuItem.Click += new System.EventHandler(this.三波段栅格反演模型ToolStripMenuItem_Click);
             // 
@@ -299,13 +312,13 @@ namespace AE
             this.空间插值ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iDW空间差值ToolStripMenuItem});
             this.空间插值ToolStripMenuItem.Name = "空间插值ToolStripMenuItem";
-            this.空间插值ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.空间插值ToolStripMenuItem.Size = new System.Drawing.Size(94, 28);
             this.空间插值ToolStripMenuItem.Text = "空间插值";
             // 
             // iDW空间差值ToolStripMenuItem
             // 
             this.iDW空间差值ToolStripMenuItem.Name = "iDW空间差值ToolStripMenuItem";
-            this.iDW空间差值ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.iDW空间差值ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.iDW空间差值ToolStripMenuItem.Text = "IDW空间差值";
             this.iDW空间差值ToolStripMenuItem.Click += new System.EventHandler(this.iDW空间差值ToolStripMenuItem_Click);
             // 
@@ -314,37 +327,37 @@ namespace AE
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clipToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(51, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(58, 28);
             this.toolStripMenuItem2.Text = "裁剪";
             // 
             // clipToolStripMenuItem
             // 
             this.clipToolStripMenuItem.Name = "clipToolStripMenuItem";
-            this.clipToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.clipToolStripMenuItem.Size = new System.Drawing.Size(152, 28);
             this.clipToolStripMenuItem.Text = "Clip";
             this.clipToolStripMenuItem.Click += new System.EventHandler(this.clipToolStripMenuItem_Click);
             // 
             // axTOCControl1
             // 
-            this.axTOCControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.axTOCControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.axTOCControl1.Location = new System.Drawing.Point(3, 7);
-            this.axTOCControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axTOCControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axTOCControl1.Name = "axTOCControl1";
             this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
-            this.axTOCControl1.Size = new System.Drawing.Size(321, 680);
+            this.axTOCControl1.Size = new System.Drawing.Size(385, 816);
             this.axTOCControl1.TabIndex = 8;
             this.axTOCControl1.OnMouseDown += new ESRI.ArcGIS.Controls.ITOCControlEvents_Ax_OnMouseDownEventHandler(this.axTOCControl1_OnMouseDown);
             this.axTOCControl1.OnMouseUp += new ESRI.ArcGIS.Controls.ITOCControlEvents_Ax_OnMouseUpEventHandler(this.axTOCControl1_OnMouseUp);
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(16, 86);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.Location = new System.Drawing.Point(18, 103);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -355,9 +368,9 @@ namespace AE
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1439, 556);
-            this.splitContainer1.SplitterDistance = 281;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(1619, 667);
+            this.splitContainer1.SplitterDistance = 316;
+            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 9;
             // 
             // contextMenuStrip1
@@ -367,26 +380,26 @@ namespace AE
             this.添加shpe图层ToolStripMenuItem,
             this.查看属性表ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(174, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(194, 88);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(193, 28);
             this.toolStripMenuItem1.Text = "删除";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // 添加shpe图层ToolStripMenuItem
             // 
             this.添加shpe图层ToolStripMenuItem.Name = "添加shpe图层ToolStripMenuItem";
-            this.添加shpe图层ToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.添加shpe图层ToolStripMenuItem.Size = new System.Drawing.Size(193, 28);
             this.添加shpe图层ToolStripMenuItem.Text = "添加shpe图层";
             this.添加shpe图层ToolStripMenuItem.Click += new System.EventHandler(this.AddShapeLayerItem_Click);
             // 
             // 查看属性表ToolStripMenuItem
             // 
             this.查看属性表ToolStripMenuItem.Name = "查看属性表ToolStripMenuItem";
-            this.查看属性表ToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.查看属性表ToolStripMenuItem.Size = new System.Drawing.Size(193, 28);
             this.查看属性表ToolStripMenuItem.Text = "查看属性表";
             this.查看属性表ToolStripMenuItem.Click += new System.EventHandler(this.OpenLayerAttribItem_Click);
             // 
@@ -394,36 +407,24 @@ namespace AE
             // 
             this.axLicenseControl2.Enabled = true;
             this.axLicenseControl2.Location = new System.Drawing.Point(752, 22);
-            this.axLicenseControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axLicenseControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axLicenseControl2.Name = "axLicenseControl2";
             this.axLicenseControl2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl2.OcxState")));
             this.axLicenseControl2.Size = new System.Drawing.Size(32, 32);
             this.axLicenseControl2.TabIndex = 10;
             // 
-            // 获取质心ToolStripMenuItem
-            // 
-            this.获取质心ToolStripMenuItem.Name = "获取质心ToolStripMenuItem";
-            this.获取质心ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.获取质心ToolStripMenuItem.Text = "获取质心";
-            // 
-            // 质心迁移ToolStripMenuItem
-            // 
-            this.质心迁移ToolStripMenuItem.Name = "质心迁移ToolStripMenuItem";
-            this.质心迁移ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.质心迁移ToolStripMenuItem.Text = "质心迁移";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1363, 684);
+            this.ClientSize = new System.Drawing.Size(1533, 821);
             this.Controls.Add(this.axLicenseControl2);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.axLicenseControl1);
             this.Controls.Add(this.axToolbarControl1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();

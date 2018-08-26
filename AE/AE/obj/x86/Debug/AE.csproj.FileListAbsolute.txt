@@ -103,3 +103,5 @@ D:\QQfile\873455984\FileRecv\AE (3)\AE (3)\AE\AE\obj\x86\Debug\AE.Properties.Res
 D:\QQfile\873455984\FileRecv\AE (3)\AE (3)\AE\AE\obj\x86\Debug\AE.ratioModel.resources
 D:\QQfile\873455984\FileRecv\AE (3)\AE (3)\AE\AE\obj\x86\Debug\AE.threeModel.resources
 D:\QQfile\873455984\FileRecv\AE (3)\AE (3)\AE\AE\obj\x86\Debug\AE.csproj.GenerateResource.Cache
+D:\programming\AEcode\AEdevelopment\AE\AE\obj\x86\Debug\AE.exe
+D:\programming\AEcode\AEdevelopment\AE\AE\obj\x86\Debug\AE.pdb

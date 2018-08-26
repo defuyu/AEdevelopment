@@ -861,6 +861,11 @@ namespace AE
 
             return clipRaster;
         }
+
+        private void 获取质心ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("sss");
+        }
     }
 
 }
