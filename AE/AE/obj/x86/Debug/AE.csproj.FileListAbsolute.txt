@@ -105,3 +105,5 @@ D:\QQfile\873455984\FileRecv\AE (3)\AE (3)\AE\AE\obj\x86\Debug\AE.threeModel.res
 D:\QQfile\873455984\FileRecv\AE (3)\AE (3)\AE\AE\obj\x86\Debug\AE.csproj.GenerateResource.Cache
 D:\programming\AEcode\AEdevelopment\AE\AE\obj\x86\Debug\AE.exe
 D:\programming\AEcode\AEdevelopment\AE\AE\obj\x86\Debug\AE.pdb
+D:\code\AEdevelopment\AE\AE\obj\x86\Debug\AE.exe
+D:\code\AEdevelopment\AE\AE\obj\x86\Debug\AE.pdb
